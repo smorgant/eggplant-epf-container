@@ -10,7 +10,7 @@ ADD https://downloads.eggplantsoftware.com/downloads/Linux/Eggplant_ubuntu.tgz .
 
 RUN tar -xf Eggplant_ubuntu.tgz
 
-RUN dpkg -i /tmp/Eggplant_debian/Eggplant22.2.0.deb
+RUN dpkg -i /tmp/Eggplant_debian/Eggplant*.deb
 
 ADD http://ppa.launchpad.net/linuxuprising/libpng12/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1.1+1~ppa0~focal_amd64.deb .
 RUN apt-get update
