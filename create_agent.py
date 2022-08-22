@@ -30,7 +30,7 @@ logging.info(os.environ.get('EXECUTION_ID'))
 logging.info(os.environ.get('LICENSER_HOST'))
 
 #Create the AGENT Namte from the execution ID
-agent_name = "EXECUTION-ENV-" + str(os.environ.get('EXECUTION_ID'))
+agent_name = "EPFEXECUTION" + str(os.environ.get('EXECUTION_ID'))
 
 #Create a Request to get the DAI token
 url = os.environ.get('URL') + "/auth/realms/eggplant/protocol/openid-connect/token"
