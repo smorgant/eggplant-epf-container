@@ -3,6 +3,12 @@ import os, sys, requests, json, logging
 
 print("Python Script starting")
 
+response = requests.request("GETT", "http://169.254.170.2/v2/metadata/", headers=headers, data=payload)
+
+response = json.loads(response.text)
+
+os.system("echo '" + response , "'")
+
 #Confirm that they all exist first before moving forward
 if 'URL' not in os.environ:
         sys.exit("URL Env variable missing")
