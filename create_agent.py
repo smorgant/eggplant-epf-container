@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import os, sys, requests, json, logging
 
-print "Python Script starting"
+print("Python Script starting")
 
 #Confirm that they all exist first before moving forward
 if 'URL' not in os.environ:
@@ -61,7 +61,7 @@ agents = json.loads(response.text)
 for agent in agents:
         if agent['name'] == agent_name:
                 sys.exit(1)
-                print "Agent ID still exist"
+                print("Agent ID still exist")
 
 
 #Create a new agent
